@@ -1,15 +1,42 @@
 .product-card {
+    position: relative;
     padding: 23rem 5rem 4rem;
     background-color: $c-white;
     border-radius: 2.4rem;
-}
-.product-card__content {
-}
-.product-card__img {
-}
-.product-card__name {
-}
-.product-card__price {
-}
-.product-card__order {
+
+    &__content {
+        font-weight: bold;
+        text-align: center;
+    }
+
+    &__img {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 19rem;
+        margin: 0 auto;
+    }
+
+    &__name {
+        font-size: 2.4rem;
+        max-width: 23rem;
+        margin: 0 auto;
+        margin-bottom: 2rem;
+    }
+
+    &__price {
+        font-size: 2rem;
+        color: $c-green;
+    }
+
+    &__order {
+        position: absolute;
+        padding: 2.8rem 4.4rem;
+        background-color: $c-orange;
+        color: $c-white;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border-radius: 0 0 2.4rem 2.4rem;
+    }
 }
