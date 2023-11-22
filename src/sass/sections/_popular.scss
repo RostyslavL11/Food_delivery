@@ -1,0 +1,25 @@
+.popular {
+    &__title {
+        margin-bottom: 1.5rem;
+    }
+
+    &__description {
+        margin: 0 auto;
+        max-width: 52rem;
+        text-align: center;
+        color: rgba($c-black, 0.5);
+        margin-bottom: 19rem;
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin-bottom: 9rem;
+    }
+}
+
+.popular__item {
+}
+
+.popular__arrow {
+}

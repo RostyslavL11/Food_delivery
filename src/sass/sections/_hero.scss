@@ -7,6 +7,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center bottom 11rem;
+    margin-bottom: 8rem;
 
     &::before,
     &::after {
@@ -63,5 +64,12 @@
         max-width: 48rem;
         font-size: 1.8rem;
         color: rgba($c-white, 0.5);
+    }
+
+    &__arrow {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 8rem;
     }
 }

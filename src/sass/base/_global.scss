@@ -23,6 +23,24 @@ body {
     margin: 0 auto;
 }
 
+.main {
+    position: relative;
+
+    &::before {
+        content: "";
+        display: block;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        right: 0;
+        z-index: -2;
+        background-image: url("../img/map.svg"), url("../img/sections_bg.svg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: center 170rem, center 175rem;
+    }
+}
+
 .title {
     font-family: $font_title;
     font-size: 5.8rem;
