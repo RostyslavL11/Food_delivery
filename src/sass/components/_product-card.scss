@@ -4,6 +4,17 @@
     background-color: $c-white;
     border-radius: 2.4rem;
 
+    &::before {
+        @include pseudo;
+        bottom: 1rem;
+        z-index: -1;
+        width: calc(100% - 8rem);
+        height: 6rem;
+        background-color: rgba($c-black, 0.32);
+        border-radius: 2.4rem;
+        filter: blur(6rem);
+    }
+
     &__content {
         font-weight: bold;
         text-align: center;
@@ -38,5 +49,10 @@
         right: 0;
         bottom: 0;
         border-radius: 0 0 2.4rem 2.4rem;
+        background-image: url("../icons/icon_arrow_right_short.svg");
+        background-repeat: no-repeat;
+        background-size: 1.8rem;
+        background-position: center right 4.4rem;
+        opacity: 0;
     }
 }
