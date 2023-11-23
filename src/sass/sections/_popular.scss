@@ -1,4 +1,6 @@
 .popular {
+    margin-bottom: 12rem;
+
     &__title {
         margin-bottom: 1.5rem;
     }
@@ -18,10 +20,4 @@
         gap: 3.5rem;
         align-items: end;
     }
-}
-
-.popular__item {
-}
-
-.popular__arrow {
 }
