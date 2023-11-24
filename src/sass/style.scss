@@ -6,6 +6,7 @@
 @import "base/global";
 
 @import "layouts/header";
+@import "layouts/footer";
 
 @import "components/search-form";
 @import "components/buttons";
@@ -13,10 +14,9 @@
 @import "components/product-card";
 @import "components/form";
 @import "components/reviews-card";
+@import "components/social";
 
 @import "sections/hero";
 @import "sections/popular";
 @import "sections/about";
 @import "sections/booking";
-@import "sections/reviews";
-@import "sections/footer";
