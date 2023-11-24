@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Food Delivery</title>
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -192,10 +193,10 @@
                     <div class="reviews__head">
                         <h2 class="title reviews__title">What our custumers are saying</h2>
                         <div class="reviews__nav">
-                            <button class="reviews__arrow" type="button"></button>
-                            <button class="reviews__arrow" type="button"></button>
+                            <button class="reviews__arrow reviews__arrow--prev" type="button"></button>
+                            <button class="reviews__arrow reviews__arrow--next" type="button"></button>
 
-                            <div class="reviews-slider">
+                            <div class="reviews-slider swiper">
                                 <ul class="reviews-slider__list">
                                     <li class="reviews-slider__item">
                                         <figure class="reviews-card">
@@ -295,6 +296,8 @@
             </div>
         </footer>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 
