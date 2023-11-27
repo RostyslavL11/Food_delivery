@@ -1,0 +1,101 @@
+@media (max-width: 1200px) {
+  .hero {
+    &::before,
+    &::after {
+      background-position: 0% 95%;
+      background-size: 38rem 27rem, 39rem 31rem;
+    }
+  }
+
+  .booking {
+    padding: 0 5rem;
+  }
+
+  .about {
+    &__images {
+      background-image: url("../img/table.webp");
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .title {
+    font-size: 4.8rem;
+  }
+
+  .main {
+    &::before {
+      background-position: center 139rem, center 150rem;
+    }
+  }
+
+  .hero,
+  .popular {
+    margin-bottom: 4rem;
+  }
+
+  .hero {
+    height: 100rem;
+    &::before,
+    &::after {
+      background-position: 0% 95%;
+      background-size: 28rem 20rem, 28rem 27rem;
+    }
+  }
+
+  .popular {
+    &__description {
+      margin-bottom: 10rem;
+    }
+
+    &__list {
+      margin-bottom: 4rem;
+    }
+  }
+
+  .product-card {
+    &__name {
+      font-size: 2rem;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .burger {
+    display: block;
+  }
+  .nav {
+    &__btn {
+      display: none;
+      &-mobile {
+        display: block;
+      }
+    }
+  }
+  .menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 30px;
+    width: 50%;
+    height: 100vh;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    gap: 20px;
+    background: hsl(0 0% 0% / 0.6);
+    backdrop-filter: blur(1rem);
+    transform: translateX(200%);
+    transition: transform 350ms ease-out;
+
+    a {
+      font-size: 3rem;
+    }
+  }
+  .open {
+    transform: translateX(0);
+  }
+}
+
+@media (max-width: 576px) {
+}

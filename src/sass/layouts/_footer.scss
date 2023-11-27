@@ -1,6 +1,6 @@
 .footer {
     background-color: $c-black;
-    padding: 13rem 0 10rem;
+    padding: 10rem 0 10rem;
 
     &__inner {
         display: flex;
@@ -19,9 +19,6 @@
 .footer-menu {
     display: flex;
     gap: 7rem;
-
-    &__item {
-    }
 
     &__link {
         color: $c-white;
