@@ -1,23 +1,26 @@
 .popular {
-    margin-bottom: 12rem;
+  margin-bottom: 12rem;
 
-    &__title {
-        margin-bottom: 1.5rem;
-    }
+  &__title {
+    margin-bottom: 1.5rem;
+  }
 
-    &__description {
-        margin: 0 auto;
-        max-width: 52rem;
-        text-align: center;
-        color: rgba($c-black, 0.5);
-        margin-bottom: 19rem;
-    }
+  &__description {
+    margin: 0 auto;
+    max-width: 52rem;
+    text-align: center;
+    color: rgba($c-black, 0.5);
+    margin-bottom: 19rem;
+  }
 
-    &__list {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        margin-bottom: 9rem;
-        gap: 3.5rem;
-        align-items: end;
-    }
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 355px);
+    grid-template-rows: minmax(401px, auto);
+    justify-content: center;
+    justify-self: center;
+    margin-bottom: 9rem;
+    gap: 3.5rem;
+    align-items: end;
+  }
 }

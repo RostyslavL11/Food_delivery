@@ -1,58 +1,59 @@
 .product-card {
-    position: relative;
-    padding: 23rem 5rem 4rem;
-    background-color: $c-white;
+  position: relative;
+  padding: 23rem 5rem 4rem;
+  background-color: $c-white;
+  border-radius: 2.4rem;
+
+  &::before {
+    @include pseudo;
+    bottom: 1rem;
+    z-index: -1;
+    width: calc(100% - 8rem);
+    height: 6rem;
+    background-color: rgba($c-black, 0.32);
     border-radius: 2.4rem;
+    filter: blur(6rem);
+  }
 
-    &::before {
-        @include pseudo;
-        bottom: 1rem;
-        z-index: -1;
-        width: calc(100% - 8rem);
-        height: 6rem;
-        background-color: rgba($c-black, 0.32);
-        border-radius: 2.4rem;
-        filter: blur(6rem);
-    }
+  &__content {
+    font-weight: bold;
+    text-align: center;
+  }
 
-    &__content {
-        font-weight: bold;
-        text-align: center;
-    }
+  &__img {
+    position: absolute;
+    left: 0;
+    right: 0;
+    // bottom: 19rem;
+    top: 2rem;
+    margin: 0 auto;
+  }
 
-    &__img {
-        position: absolute;
-        left: 0;
-        right: 0;
-        bottom: 19rem;
-        margin: 0 auto;
-    }
+  &__name {
+    font-size: 2.4rem;
+    max-width: 23rem;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+  }
 
-    &__name {
-        font-size: 2.4rem;
-        max-width: 23rem;
-        margin: 0 auto;
-        margin-bottom: 2rem;
-    }
+  &__price {
+    font-size: 2rem;
+    color: $c-green;
+  }
 
-    &__price {
-        font-size: 2rem;
-        color: $c-green;
-    }
-
-    &__order {
-        position: absolute;
-        padding: 2.8rem 4.4rem;
-        background-color: $c-orange;
-        color: $c-white;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        border-radius: 0 0 2.4rem 2.4rem;
-        background-image: url("../icons/icon_arrow_right_short.svg");
-        background-repeat: no-repeat;
-        background-size: 1.8rem;
-        background-position: center right 4.4rem;
-        opacity: 0;
-    }
+  &__order {
+    position: absolute;
+    padding: 2.8rem 4.4rem;
+    background-color: $c-orange;
+    color: $c-white;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 0 0 2.4rem 2.4rem;
+    background-image: url("../icons/icon_arrow_right_short.svg");
+    background-repeat: no-repeat;
+    background-size: 1.8rem;
+    background-position: center right 4.4rem;
+    opacity: 0;
+  }
 }

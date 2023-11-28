@@ -1,11 +1,18 @@
 document.addEventListener("DOMContentLoaded", () => {
 
 	const swiper = new Swiper('.swiper', {
-		slidesPerView: 2,
+		slidesPerView: 1,
 		navigation: {
 			nextEl: '.reviews__arrow--next',
 			prevEl: '.reviews__arrow--prev',
 		},
+
+		breakpoints: {
+			768: {
+				slidesPerView: 2,
+				spaceBetween: 20
+			}
+		}
 
 	});
 
