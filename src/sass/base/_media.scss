@@ -226,6 +226,14 @@
     }
   }
 
+  .menu {
+    padding: 15px;
+
+    a {
+      font-size: 2rem;
+    }
+  }
+
   .search-form {
     &__input {
       padding: 0.6rem;
@@ -304,6 +312,14 @@
         right: -3rem;
         transform: scaleX(-1);
       }
+    }
+  }
+
+  .footer-menu {
+    gap: 17px;
+
+    &__link {
+      font-size: 12px;
     }
   }
 }

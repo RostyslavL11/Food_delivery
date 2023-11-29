@@ -16,7 +16,8 @@
   &__list {
     display: grid;
     grid-template-columns: repeat(auto-fill, 355px);
-    grid-template-rows: minmax(401px, auto);
+    grid-template-rows: 401px;
+
     justify-content: center;
     justify-self: center;
     margin-bottom: 9rem;
