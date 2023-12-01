@@ -1,19 +1,21 @@
 .search-form {
-    &__inner {
-        margin: 0 auto;
-        max-width: 57rem;
-        background-color: $c-white;
-        border-radius: 1.6rem;
-        display: flex;
-        padding: 6px;
-    }
+  &__inner {
+    margin: 0 auto;
+    max-width: 57rem;
+    background-color: $c-white;
+    border-radius: 1.6rem;
+    display: flex;
+    padding: 6px;
+    color: rgba($c-white, 0.5);
+    caret-color: $c-orange;
+  }
 
-    &__label {
-        display: none;
-    }
+  &__label {
+    display: none;
+  }
 
-    &__input {
-        padding: 2.6rem;
-        width: 100%;
-    }
+  &__input {
+    padding: 2.6rem;
+    width: 100%;
+  }
 }

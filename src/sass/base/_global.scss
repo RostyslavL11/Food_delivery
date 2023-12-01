@@ -3,6 +3,10 @@ html {
   // 1 rem = 10 px
 }
 
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
 body {
   font-family: $font_main;
   font-weight: 400;
