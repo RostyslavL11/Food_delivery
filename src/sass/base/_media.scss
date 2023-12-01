@@ -1,4 +1,20 @@
+@media (max-width: 1400px) {
+  .main {
+    &::before {
+      background-position: center 130rem, center 130rem;
+      background-size: 100%, 100%;
+    }
+  }
+}
+
 @media (max-width: 1200px) {
+  .main {
+    &::before {
+      background-position: center 133rem, center 136rem;
+      background-size: 100%, 100%;
+    }
+  }
+
   .hero {
     &::before,
     &::after {
@@ -19,14 +35,15 @@
 }
 
 @media (max-width: 992px) {
-  .title {
-    font-size: 4.8rem;
-  }
-
   .main {
     &::before {
-      background-position: center 139rem, center 150rem;
+      background-position: center 114rem, center 116rem;
+      background-size: 100%, 100%;
     }
+  }
+
+  .title {
+    font-size: 4.8rem;
   }
 
   .hero,
@@ -46,12 +63,10 @@
   }
 
   .popular {
-    &__description {
-      margin-bottom: 0rem;
-    }
-
     &__list {
       margin-bottom: 4rem;
+      gap: 9rem;
+      column-gap: 5rem;
     }
   }
 
@@ -63,6 +78,13 @@
 }
 
 @media (max-width: 768px) {
+  .main {
+    &::before {
+      background-position: center 252rem, center 252rem;
+      background-size: 100%, 100%;
+    }
+  }
+
   .title {
     font-size: 3.8rem;
 
