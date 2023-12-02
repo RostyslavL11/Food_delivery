@@ -65,7 +65,8 @@
 
   &__order {
     position: absolute;
-    z-index: -10;
+    visibility: hidden;
+
     padding: 2.8rem 4.4rem;
     background-color: $c-orange;
     color: $c-white;
@@ -83,6 +84,6 @@
 
   &:hover .product-card__order {
     opacity: 1;
-    z-index: 0;
+    visibility: visible;
   }
 }
